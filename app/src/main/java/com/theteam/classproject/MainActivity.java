@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         databaseHelper = new DatabaseHelper(this);
 
-        usernameEditText = (EditText)findViewById(R.id.usernameEditText);
-        passwordEditText = (EditText)findViewById(R.id.passwordEditText);
+        usernameEditText = findViewById(R.id.usernameEditText);
+        passwordEditText = findViewById(R.id.passwordEditText);
 
-        loginBtn = (Button)findViewById(R.id.loginBtn);
-        registerBtn = (Button)findViewById(R.id.registerBtn);
+        loginBtn = findViewById(R.id.loginBtn);
+        registerBtn = findViewById(R.id.registerBtn);
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -22,11 +22,11 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         databaseHelper = new DatabaseHelper(this);
-        usernameEditText = (EditText)findViewById(R.id.et_username);
-        passwordEditText = (EditText)findViewById(R.id.et_password);
-        confirmPasswordEditText = (EditText)findViewById(R.id.et_cpassword);
-        btn_register = (Button)findViewById(R.id.btn_register);
-        btn_login = (Button)findViewById(R.id.btn_login);
+        usernameEditText = findViewById(R.id.et_username);
+        passwordEditText = findViewById(R.id.et_password);
+        confirmPasswordEditText = findViewById(R.id.et_cpassword);
+        btn_register = findViewById(R.id.btn_register);
+        btn_login = findViewById(R.id.btn_login);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
